@@ -2,7 +2,6 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   frameRate(4);
   background(0);
-  rectMode(CENTER);
   ellipseMode(CORNER);
 }
 
