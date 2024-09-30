@@ -2,7 +2,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   frameRate(4);
   background(0);
-  rectMode(CENTER);
+  ellipseMode(CORNER);
 }
 
 function draw() {
@@ -10,27 +10,30 @@ function draw() {
 
   strokeWeight(4);
   stroke(0);
-  fill(180, 0, 180);
-  circle(mouseX + 58, mouseY - 40, mouseX);
-
-  fill(255);
-  ellipseMode(CORNER);
-  ellipse(mouseX + 25, mouseY + 50, mouseX);
-  fill(185);
-  ellipse(mouseX + 0, mouseY + 20, mouseX);
-  noFill(0);
-  let centerX = width;
-  arc(mouseX, mouseY, 80, 80, 0, PI);
-  circle(mouseX, mouseY, 48);
-
-  noStroke(0, 200, 25);
-  fill(0, 200, 25);
-  ellipse(225, 350, 50);
-  ellipse(230, 270, 30);
-  ellipse(310, 290, 15);
+  fill(50, 180, 100);
+  circle(mouseX + 58, mouseY - 40, 10);
+  fill(0, 100, 150);
+  circle(mouseX - 20, mouseY - 200, 10);
+  fill(150, 0, 100);
+  circle(mouseX + 200, mouseY - 50, 10);
 
   noFill(0);
+  stroke(35);
+  strokeWeight(7);
+  ellipse(mouseX + 50, 320, 250, 100); //horizontal
+  ellipse(mouseX + 130, 240, 100, 250);
+
   stroke(0);
-  ellipse(200, 240, 100, 250);
-  ellipse(130, 320, 250, 100);
+  strokeWeight(3);
+  fill(175);
+  ellipse(mouseX + 148, 340, 60);
+
+  fill(150, 0, 100);
+  ellipse(mouseX + 200, 460, 15);
+
+  fill(50, 180, 100);
+  ellipse(mouseX + 50, 380, 20);
+
+  fill(0, 100, 150);
+  ellipse(mouseX + 128, 270, 27);
 }
